@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "852896210977",
+    "project_id": "megastore-ed4d8",
+    "storage_bucket": "megastore-ed4d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852896210977:android:87c701cdaac96553400360",
+        "android_client_info": {
+          "package_name": "com.viswajith.megastore_riders_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852896210977-4f9u4bvoqi344lfll26ld9a6dr00lmpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCasI9UoczO6HZeZKyCOghh9i5EQvTpcXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852896210977-4f9u4bvoqi344lfll26ld9a6dr00lmpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852896210977:android:8e33d3e7e70f96d8400360",
+        "android_client_info": {
+          "package_name": "com.viswajith.megastore_users_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852896210977-4f9u4bvoqi344lfll26ld9a6dr00lmpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCasI9UoczO6HZeZKyCOghh9i5EQvTpcXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852896210977-4f9u4bvoqi344lfll26ld9a6dr00lmpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852896210977:android:e7c1bed4f8d900a3400360",
+        "android_client_info": {
+          "package_name": "com.viswajith.sellersapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852896210977-4f9u4bvoqi344lfll26ld9a6dr00lmpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCasI9UoczO6HZeZKyCOghh9i5EQvTpcXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852896210977-4f9u4bvoqi344lfll26ld9a6dr00lmpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
