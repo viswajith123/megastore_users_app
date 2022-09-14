@@ -24,12 +24,13 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (c)=> CartItemCounter()),
-        //ChangeNotifierProvider(create: (c)=> TotalAmount()),
+        ChangeNotifierProvider(create: (c)=> TotalAmount()),
       ],
       child: MaterialApp(
         title:  'Users App',
@@ -43,6 +44,49 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
+
+
+
+//       providers: [
+//        ChangeNotifierProvider(create: (c)=> CartItemCounter()),
+//         //ChangeNotifierProvider(create: (c)=> TotalAmount()),
+//        ],
+//         child: MaterialApp(
+//       title: 'Riders App',
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       home: const MySplashScreen(),
+//      ),
+//     );
+//   }
+// }
+//
+
+
+
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MultiProvider(
+//       providers: [
+//        // ChangeNotifierProvider(create: (c)=> CartItemCounter()),
+//         //ChangeNotifierProvider(create: (c)=> TotalAmount()),
+//       ],
+//       child: MaterialApp(
+//         title:  'Users App',
+//         debugShowCheckedModeBanner: false,
+//         theme: ThemeData(
+//           primarySwatch: Colors.blue,
+//         ),
+//         home: const MySplashScreen(),
+//       ),
+//     );
+//   }
+// }
+//
 
 
 

@@ -47,22 +47,24 @@ class _ProductScreenState extends State<ProductScreen> {
           icon: const Icon(Icons.arrow_back),
           onPressed: ()
          {
-         //  clearCartNow(context);
-         //
-         //   Navigator.push(context, MaterialPageRoute(builder: (c)=> const MySplashScreen()));
+          clearCartNow(context);
+
+           Navigator.push(context, MaterialPageRoute(builder: (c)=> const MySplashScreen()));
           },
         ),
         title: const Text(
           "MeaStore",// Text(sharedPreferences!.getString("sellername")!,
           style: TextStyle(  fontSize: 45, fontFamily: "Sinatra"),
         ),
+        centerTitle: true,
+        automaticallyImplyLeading: true,
 
 
 
 
 
-      //   centerTitle: true,
-      //   automaticallyImplyLeading: true,
+
+      //
       //   actions: [
       //     // IconButton(
       //     //      icon: Icon(Icons.shopping_cart,color: Colors.cyan),

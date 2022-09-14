@@ -60,12 +60,12 @@ class _HomeScreenState extends State<HomeScreen>
 
   ];
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  //
-  //   clearCartNow(context);
-  // }
+  @override
+  void initState() {
+    super.initState();
+
+    clearCartNow(context);
+  }
 
 
   @override
@@ -123,9 +123,9 @@ class _HomeScreenState extends State<HomeScreen>
                       return Container(
                         width: MediaQuery.of(context).size.width,
                         margin: const EdgeInsets.symmetric(horizontal: 1.0),
-                        //decoration: const BoxDecoration(
-                         // color: Colors.black,
-                       // ),
+                        decoration: const BoxDecoration(
+                          color: Colors.black,
+                        ),
                         child: Padding(
                           padding: const EdgeInsets.all(4.0),
                           child: Image.asset(
@@ -174,3 +174,4 @@ class _HomeScreenState extends State<HomeScreen>
     );
   }
 }
+///ORGINAL

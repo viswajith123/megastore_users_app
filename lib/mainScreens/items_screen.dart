@@ -142,7 +142,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
       body: CustomScrollView(
         slivers: [
 
-          SliverPersistentHeader(pinned: true, delegate: TextWidgetHeader(title:  widget.model!.productID.toString()+ " Products")),// widget.model!.sellerName.toString()+toString()+" Products")),
+          SliverPersistentHeader(pinned: true, delegate: TextWidgetHeader(title:  " Products"  +widget.model!.productID.toString())),// widget.model!.sellerName.toString()+toString()+" Products")),
           StreamBuilder<QuerySnapshot>(
             stream: FirebaseFirestore.instance
                 // .collection("sellers")

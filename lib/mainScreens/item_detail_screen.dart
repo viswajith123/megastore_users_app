@@ -90,13 +90,13 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen>
               {
 
                 int itemCounter = int.parse(counterTextEditingController.text);
-
-                List<String> separateItemIDsList = separateItemIDs();
-
-                //1.check if item exist already in cart
-                separateItemIDsList.contains(widget.model!.itemID)
-                    ? Fluttertoast.showToast(msg: "Item is already in Cart.")
-                    :
+                //
+                 List<String> separateItemIDsList = separateItemIDs();
+                //
+                // //1.check if item exist already in cart
+                 separateItemIDsList.contains(widget.model!.itemID)
+                      ? Fluttertoast.showToast(msg: "Item is already in Cart.")
+                      :
                 //2.add to cart
                 addItemToCart(widget.model!.itemID, context, itemCounter);
                 //add to cart

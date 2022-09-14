@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:megastore_users_app/main.dart';
 
 import '../assistantMethods/cart_Item_counter.dart';
 import '../mainScreens/cart_screen.dart';
@@ -10,7 +11,7 @@ class MyAppBar extends StatefulWidget with PreferredSizeWidget
 {
   final PreferredSizeWidget? bottom;
   final String? sellerUID;
-  MyAppBar({this.bottom, this.sellerUID});
+  MyAppBar({this.bottom,this.sellerUID});
 
   @override
   _MyAppBarState createState() => _MyAppBarState();
@@ -38,13 +39,13 @@ class _MyAppBarState extends State<MyAppBar>
             )
         ),
       ),
-      // leading: IconButton(
-      //   icon: const Icon(Icons.arrow_back),
-      //   onPressed: ()
-      //   {
-      //     Navigator.pop(context);
-      //   },
-      // ),
+      leading: IconButton(
+        icon: const Icon(Icons.arrow_back),
+        onPressed: ()
+        {
+          Navigator.pop(context);
+        },
+      ),
       title: const Text(
         "Megastore",
         style: TextStyle(fontSize: 45, fontFamily: "Signatra"),
@@ -59,14 +60,14 @@ class _MyAppBarState extends State<MyAppBar>
               onPressed: ()
               {
 
-                //Navigator.push(context, MaterialPageRoute(builder: (c)=> CartScreen(sellerUID: widget.sellerUID)));
+                Navigator.push(context, MaterialPageRoute(builder: (c)=> CartScreen(sellerUID: widget.sellerUID)));
               //send user to cart screen
               },
             ),
             Positioned(
               child: Stack(
                 children: [
-                  const Icon(
+                   Icon(
                     Icons.brightness_1,
                     size: 20.0,
                     color: Colors.green,
@@ -75,13 +76,14 @@ class _MyAppBarState extends State<MyAppBar>
                     top: 3,
                     right: 4,
                      child: Center(
-                      child: Consumer<CartItemCounter>(
+
+                       child: Consumer<CartItemCounter>(
                         builder: (context, counter, c)
                         {
-                          return Text(
+                           return Text(
                             counter.count.toString(),
-                            style: const TextStyle(color: Colors.white, fontSize: 12),
-                          );
+                             style: const TextStyle(color: Colors.white, fontSize: 12),
+                           );
                         },
                       ),
                     ),
@@ -95,3 +97,19 @@ class _MyAppBarState extends State<MyAppBar>
     );
   }
 }
+
+
+
+
+//                        child: Text("0", style: TextStyle(color: Colors.white, fontSize: 12),),
+//                      ),
+//                   ),
+//                 ],
+//               ),
+//             ),
+//           ],
+//         ),
+//       ],
+//     );
+//   }
+// }
